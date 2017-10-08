@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classroom"
+    android:padding="24dp"
+    tools:context="com.example.knot.yourgrade.Main2Activity">
+
+    <TextView
+        android:id="@+id/ResultName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAFFFFFF"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="#111111"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/ResultGrade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AAFFFFFF"
+        android:gravity="center"
+        android:textColor="#111111"
+        android:textSize="250sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ResultName"
+        />
+</RelativeLayout>

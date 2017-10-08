@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/classroom"
+    android:padding="24dp"
+    tools:context="com.example.knot.yourgrade.MainActivity">
+
+    <TextView
+        android:id="@+id/WhatYourGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Your_Grade"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WhatYourGrade"
+            android:layout_centerHorizontal="true"
+            android:background="#DDFFFFFF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/Enter_Name"
+            android:textSize="16sp"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Enter"
+            android:layout_centerHorizontal="true"
+            android:background="#DDFFFFFF"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:text="@string/Name" />
+
+        <EditText
+            android:id="@+id/Edit_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_centerHorizontal="true"
+            android:background="#DDFFFFFF"
+            android:padding="12dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Edit_Name"
+            android:layout_centerHorizontal="true"
+            android:background="#DDFFFFFF"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:text="@string/Score" />
+
+        <EditText
+            android:id="@+id/Edit_Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Score"
+            android:layout_centerHorizontal="true"
+            android:background="#DDFFFFFF"
+            android:ems="10"
+            android:padding="12dp"
+            android:inputType="numberDecimal" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/FindButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FindGrade"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ExitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Exit" />
+
+    </LinearLayout>
+</RelativeLayout>
